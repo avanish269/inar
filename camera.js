@@ -44,7 +44,7 @@ var img=document.createElement("a");
   video:true,
 };*/
 //if(isMobile.any()==false){
-cv.style.display="none";
+//cv.style.display="none";
   const cst={
     video:{facingMode:"environment"},
   };
