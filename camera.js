@@ -4,7 +4,7 @@ const ctxt=cv.getContext('2d');
 const capBut=document.getElementById("capture");
 //const select=document.getElementById("select");
 var img=document.createElement("a");
-var isMobile={
+/*var isMobile={
   Android: function(){
     return navigator.userAgent.match(/Android/i);
   },
@@ -23,7 +23,7 @@ var isMobile={
   any: function() {
     return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
   }
-};
+};*/
 
 /*function gotDevices(mediaDevices) {
   select.innerHTML = '';
@@ -40,19 +40,19 @@ var isMobile={
     }
   });
 }*/
-const cst={
+/*const cst={
   video:true,
-};
-if(isMobile.any()==false){
+};*/
+//if(isMobile.any()==false){
   const cst={
     video:{facingMode:"environment"},
   };
-}
-else {
+//}
+/*else {
   const cst={
     video: true,
   };
-}
+}*/
 
 capBut.addEventListener('click',()=>{
   ctxt.drawImage(vid,0,0,cv.width,cv.height);
