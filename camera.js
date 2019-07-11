@@ -16,10 +16,11 @@ capBut.addEventListener('click',()=>{
     $.ajax(
       {
         type: "POST",
-        url: "process.py",
-        //url: "a.txt",
+        //url: "process.py",
+        url: "a.txt",
         //data: img.href,
-        dataType: "html",
+        dataType: "text",
+        //dataType: "html",
         success: function(data){
           alert(data);
           //document.getElementById("change").innerHTML=data;
